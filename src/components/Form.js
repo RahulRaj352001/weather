@@ -61,6 +61,7 @@ export const Form = () => {
           inputProps={{ className: classes.input }}
           className={classes.input}
           label="city"
+          variant="outlined"
           onChange={(e)=> handleCity(e.target.value)}
         />
         <TextField
