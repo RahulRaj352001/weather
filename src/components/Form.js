@@ -81,6 +81,7 @@ export const Form = () => {
           get Weather
         </Button>
       </Box>
+      < p>jiji</p>
       <Information className={classes.second} data={data} />
     </>
   );
