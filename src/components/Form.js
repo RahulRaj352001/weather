@@ -31,6 +31,7 @@ export const Form = () => {
    const [country, setCountry] = useState('india');
    const [click, setClick] = useState(false)
   const [data, setdata] = useState();
+
   useEffect(() => {
        if (click===true) {
         const getWeather = async () => {
@@ -41,7 +42,7 @@ export const Form = () => {
           };
           getWeather();
        }
-  }, [click]);
+  }, [city,country,click]);
 
   const handleCity=(value)=>{
   setCity(value);
